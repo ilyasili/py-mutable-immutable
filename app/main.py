@@ -16,4 +16,13 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+list_of_variables = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, collection_of_coins, marks]
+
+mutable = [i for i in list_of_variables if type(i) == list or type(i) == dict or type(i) == set]
+
+immutable = [i for i in list_of_variables if type(i) == int or type(i) == float or type(i) == str or type(i) == bool or type(i) == tuple]
+
+sorted_variables = {
+    "mutable" : mutable,
+    "immutable" : immutable
+}
