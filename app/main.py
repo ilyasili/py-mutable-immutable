@@ -32,6 +32,6 @@ immutable = [i for i in list_of_variables
              if isinstance(i, (int, float, str, bool, tuple))]
 
 sorted_variables = {
-    "mutable" : mutable,
-    "immutable" : immutable
+    "mutable": mutable,
+    "immutable": immutable
 }
