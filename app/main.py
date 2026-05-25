@@ -16,11 +16,20 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-list_of_variables = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, collection_of_coins, marks]
+list_of_variables = [lucky_number,
+                     pi,
+                     one_is_a_prime_number,
+                     name,
+                     my_favourite_films,
+                     profile_info,
+                     collection_of_coins,
+                     marks]
 
-mutable = [i for i in list_of_variables if type(i) == list or type(i) == dict or type(i) == set]
+mutable = [i for i in list_of_variables
+           if isinstance(i, (list, dict, set))]
 
-immutable = [i for i in list_of_variables if type(i) == int or type(i) == float or type(i) == str or type(i) == bool or type(i) == tuple]
+immutable = [i for i in list_of_variables
+             if isinstance(i, (int, float, str, bool, tuple))]
 
 sorted_variables = {
     "mutable" : mutable,
