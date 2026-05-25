@@ -26,10 +26,10 @@ list_of_variables = [lucky_number,
                      marks]
 
 mutable = [i for i in list_of_variables
-           if isinstance(i, (list, dict, set, tuple))]
+           if isinstance(i, (list, dict, set))]
 
 immutable = [i for i in list_of_variables
-             if isinstance(i, (int, float, str, bool))]
+             if isinstance(i, (int, float, str, bool, tuple))]
 
 sorted_variables = {
     "mutable": mutable,
